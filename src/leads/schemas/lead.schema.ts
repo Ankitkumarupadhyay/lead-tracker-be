@@ -23,6 +23,7 @@ export class Lead {
   phone: string;
 
   @Prop({
+    type: String,
     required: true,
     enum: Object.values(LeadStatus),
     default: LeadStatus.NEW,
